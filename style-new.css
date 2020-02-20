@@ -1,7 +1,3 @@
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
 main > .container {
     padding: 0;
     margin: 0;
@@ -60,7 +56,6 @@ h2 {
 	margin: 30px 0 60px;
 }
 
-}
 .col-center {
 	margin: 0 auto;
 	float: none !important;
@@ -70,29 +65,19 @@ h2 {
     margin-top: -130px;
 }
 .carousel {
-	margin: auto;
+    margin: auto;
 }
+
 .carousel .item {
 	color: #999;
 	font-size: 1rem;
     text-align: center;
 	overflow: hidden;
     min-height: 290px;
+    width: 100%;
 }
-.carousel .item .img-box {
-	width: 135px;
-	height: 135px;
-	margin: 0 auto;
-	padding: 5px;
-	border: 1px solid #ddd;
-	border-radius: 50%;
-}
-.carousel .img-box img {
-	width: 100%;
-	height: 100%;
-	display: block;
-	border-radius: 50%;
-}
+
+
 .carousel .testimonial {
 	padding: 30px 0 10px;
 }
@@ -103,10 +88,9 @@ h2 {
     color: black;
 }
 .carousel .carousel-control {
-	width: 50px;
-    height: 50px;
-    margin-top: -20px;
-    top: 50%;
+	width: 75px;
+    height: 75px;
+    top: 5%;
 	background: none;
 }
 .carousel-control i {
