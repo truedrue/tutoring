@@ -10,3 +10,9 @@
 [X] Remove bg-info from image (flash of blue)
 [X] Make Contact Forms Responsive
 [X] Reduce whitespace between headline and lead on contact form
+
+[ ] Fix testimonials
+[X] Fix links on homepage
+[X] Fix contact link (email to Drew)
+[ ] Fix about me image on mobile (circular image float right text below image on mobile)
+[X] Reduce logo font at md breakpoint
