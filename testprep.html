@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Prep - Drew Coleman Tutoring</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <style>
+        .font-dm-sans { font-family: 'DM Sans', sans-serif; }
+        .font-dm-serif { font-family: 'DM Serif Display', serif; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        coral: {
+                            50: '#fff7f5',
+                            100: '#ffede8',
+                            200: '#ffd9cf',
+                            300: '#ffb8a6',
+                            400: '#ff8c70',
+                            500: '#f97150',
+                            600: '#e6533a',
+                            700: '#c23d28',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-dm-sans bg-stone-50">
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md fixed w-full top-0 z-50 border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-baseline">
+                        <span class="font-dm-serif text-3xl text-stone-900">Drew Coleman</span>
+                        <div class="w-2 h-2 bg-teal-500 rounded-full ml-1 mb-1"></div>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="academics.html" class="text-stone-700 hover:text-teal-600 font-medium transition">Academic Support</a>
+                    <a href="testprep.html" class="text-teal-600 font-medium transition">Test Prep</a>
+                    <a href="aboutme.html" class="text-stone-700 hover:text-teal-600 font-medium transition">About</a>
+                    <a href="contact.html" class="bg-stone-900 text-white px-7 py-3 rounded-full hover:bg-stone-800 transition font-medium">Let's Talk</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-stone-700" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-3 space-y-1">
+                <a href="academics.html" class="block px-3 py-2 text-stone-700">Academic Support</a>
+                <a href="testprep.html" class="block px-3 py-2 text-teal-600 font-medium">Test Prep</a>
+                <a href="aboutme.html" class="block px-3 py-2 text-stone-700">About</a>
+                <a href="contact.html" class="block px-3 py-2 bg-stone-900 text-white rounded">Let's Talk</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <div class="mb-6">
+                    <div class="inline-flex items-center bg-teal-50 px-4 py-2 rounded-full">
+                        <span class="text-teal-700 font-medium text-sm">ACT, SAT, ISEE, SSAT & More</span>
+                    </div>
+                </div>
+                <h1 class="font-dm-serif text-5xl lg:text-6xl text-stone-900 leading-tight mb-6">
+                    Test Prep That<br>
+                    <span class="relative inline-block">
+                        <span class="relative z-10">Builds Confidence</span>
+                        <div class="absolute bottom-2 left-0 right-0 h-4 bg-teal-300/60 -rotate-1"></div>
+                    </span>
+                </h1>
+                <p class="text-xl text-stone-600 leading-relaxed">
+                    Yes, standardized tests are an unfortunate part of education, but they can also be fun. At least, I think so! A good strategy and confidence can make such a difference.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Approach Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-dm-serif text-4xl text-stone-900 mb-4">My Three-Part Approach</h2>
+                <p class="text-xl text-stone-600">I help my students see improvements by:</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-teal-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="font-dm-serif text-3xl text-teal-600">1</span>
+                    </div>
+                    <h3 class="font-dm-serif text-2xl text-stone-900 mb-3">Frequent Assessment</h3>
+                    <p class="text-stone-600">Quizzing them early and often on content they need to know. We track progress together so you can see growth over time.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-coral-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="font-dm-serif text-3xl text-coral-600">2</span>
+                    </div>
+                    <h3 class="font-dm-serif text-2xl text-stone-900 mb-3">Strategy Development</h3>
+                    <p class="text-stone-600">Developing a personalized test-taking strategy that plays to their strengths.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="font-dm-serif text-3xl text-purple-600">3</span>
+                    </div>
+                    <h3 class="font-dm-serif text-2xl text-stone-900 mb-3">Practice Simulation</h3>
+                    <p class="text-stone-600">Ensuring they test the way they practice through regular "mock" exams. No surprises on test day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tests Section -->
+    <section class="py-20 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16">
+                <h2 class="font-dm-serif text-4xl text-stone-900 mb-4">Tests I Prepare Students For</h2>
+                <p class="text-xl text-stone-600">I've spent the most time with these tests, but each is unique and many skills overlap</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-3xl p-10 shadow-lg hover:shadow-xl transition relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-teal-100 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="bg-teal-600 text-white px-4 py-2 rounded-lg font-bold text-lg">ACT</div>
+                            <span class="text-stone-500">College Admission</span>
+                        </div>
+                        <p class="text-stone-600 mb-6">The ACT tests English, Math, Reading, and Science reasoning with an optional Writing section. Known for its straightforward questions and time pressure.</p>
+                        <ul class="space-y-2 text-stone-600">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Time management strategies</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Science section mastery</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Full-length practice tests</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl p-10 shadow-lg hover:shadow-xl transition relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-coral-100 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="bg-coral-500 text-white px-4 py-2 rounded-lg font-bold text-lg">SAT</div>
+                            <span class="text-stone-500">College Admission</span>
+                        </div>
+                        <p class="text-stone-600 mb-6">The SAT focuses on Evidence-Based Reading and Writing plus Math. Tests critical thinking and the ability to analyze texts and data.</p>
+                        <ul class="space-y-2 text-stone-600">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-coral-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Evidence-based answer techniques</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-coral-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Math without calculator prep</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-coral-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Vocabulary in context</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl p-10 shadow-lg hover:shadow-xl transition relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-purple-100 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="bg-purple-600 text-white px-4 py-2 rounded-lg font-bold text-lg">ISEE</div>
+                            <span class="text-stone-500">Independent School</span>
+                        </div>
+                        <p class="text-stone-600 mb-6">The Independent School Entrance Exam is used for admission to many private and independent schools. Tests verbal reasoning, reading, and math.</p>
+                        <ul class="space-y-2 text-stone-600">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Age-appropriate strategies</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Verbal reasoning skills</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Essay writing practice</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl p-10 shadow-lg hover:shadow-xl transition relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-yellow-100 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="bg-yellow-500 text-white px-4 py-2 rounded-lg font-bold text-lg">SSAT</div>
+                            <span class="text-stone-500">Independent School</span>
+                        </div>
+                        <p class="text-stone-600 mb-6">The Secondary School Admission Test is another pathway to private school admission. Includes quantitative, verbal, and reading sections.</p>
+                        <ul class="space-y-2 text-stone-600">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Synonym & analogy practice</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Quantitative comparisons</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Writing sample preparation</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <p class="text-stone-600 mb-4">Have a different test in mind? Feel free to inquire - many skills transfer across standardized tests.</p>
+                <a href="contact.html" class="text-teal-600 font-medium hover:text-teal-700 transition inline-flex items-center gap-2">
+                    <span>Ask about other tests</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extended Time Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-dm-serif text-4xl text-stone-900 mb-6">Specialized Support for Learning Differences</h2>
+                    <p class="text-xl text-stone-600 leading-relaxed mb-6">
+                        Over half of my test prep students have a diagnosis that allows for extended time. I have specialized training to support learners with different needs.
+                    </p>
+                    <p class="text-stone-600 leading-relaxed">
+                        Whether your student has ADHD, dyslexia, or another learning difference, I understand how to adapt my teaching to help them succeed. We'll work together to develop strategies that play to their strengths.
+                    </p>
+                </div>
+                <div class="bg-gradient-to-br from-teal-50 to-teal-100/50 rounded-3xl p-10">
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-teal-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900 mb-1">Extended Time Strategies</h3>
+                                <p class="text-stone-600">Learn how to effectively use accommodations</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-teal-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900 mb-1">Specialized Training</h3>
+                                <p class="text-stone-600">Experience working with diverse learners</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-teal-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900 mb-1">Patient & Understanding</h3>
+                                <p class="text-stone-600">Meeting each student where they are</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-teal-600 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-teal-600 to-teal-700"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center text-white relative z-10">
+            <h2 class="font-dm-serif text-5xl mb-6">Questions?</h2>
+            <p class="text-2xl mb-10 text-teal-100">I'm happy to chat about how I can help your student</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-teal-700 px-10 py-4 rounded-full font-bold hover:bg-stone-50 transition">
+                    Get in Touch
+                </a>
+                <a href="academics.html" class="border-2 border-white text-white px-10 py-4 rounded-full font-bold hover:bg-white/10 transition">
+                    Explore Academic Support
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-300 py-16 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <a href="index.html" class="flex items-baseline mb-6">
+                        <span class="font-dm-serif text-3xl text-white">Drew Coleman</span>
+                        <div class="w-2 h-2 bg-teal-500 rounded-full ml-1 mb-1"></div>
+                    </a>
+                    <p class="text-stone-400 mb-6">
+                        Empowering students to achieve academic excellence through personalized tutoring and proven strategies.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="testprep.html" class="hover:text-teal-400 transition">Test Prep</a></li>
+                        <li><a href="academics.html" class="hover:text-teal-400 transition">Academic Support</a></li>
+                        <li><a href="aboutme.html" class="hover:text-teal-400 transition">About Me</a></li>
+                        <li><a href="contact.html" class="hover:text-teal-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4">Contact</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="mailto:drewcolemantutoring@gmail.com" class="hover:text-teal-400 transition break-all">
+                                drewcolemantutoring@gmail.com
+                            </a>
+                        </li>
+                        <li>(720) 314-8738</li>
+                        <li>New York | Denver | Online</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-stone-800 pt-8 text-center text-stone-500">
+                <p>&copy; 2026 Drew Coleman Tutoring. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

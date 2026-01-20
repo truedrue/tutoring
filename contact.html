@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Drew Coleman Tutoring</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <style>
+        .font-dm-sans { font-family: 'DM Sans', sans-serif; }
+        .font-dm-serif { font-family: 'DM Serif Display', serif; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        coral: {
+                            50: '#fff7f5',
+                            100: '#ffede8',
+                            200: '#ffd9cf',
+                            300: '#ffb8a6',
+                            400: '#ff8c70',
+                            500: '#f97150',
+                            600: '#e6533a',
+                            700: '#c23d28',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-dm-sans bg-stone-50">
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md fixed w-full top-0 z-50 border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-baseline">
+                        <span class="font-dm-serif text-3xl text-stone-900">Drew Coleman</span>
+                        <div class="w-2 h-2 bg-teal-500 rounded-full ml-1 mb-1"></div>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="academics.html" class="text-stone-700 hover:text-teal-600 font-medium transition">Academic Support</a>
+                    <a href="testprep.html" class="text-stone-700 hover:text-teal-600 font-medium transition">Test Prep</a>
+                    <a href="aboutme.html" class="text-stone-700 hover:text-teal-600 font-medium transition">About</a>
+                    <a href="contact.html" class="bg-teal-600 text-white px-7 py-3 rounded-full hover:bg-teal-700 transition font-medium">Let's Talk</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-stone-700" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-3 space-y-1">
+                <a href="academics.html" class="block px-3 py-2 text-stone-700">Academic Support</a>
+                <a href="testprep.html" class="block px-3 py-2 text-stone-700">Test Prep</a>
+                <a href="aboutme.html" class="block px-3 py-2 text-stone-700">About</a>
+                <a href="contact.html" class="block px-3 py-2 bg-teal-600 text-white rounded">Let's Talk</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-2xl mx-auto">
+                <div class="mb-6">
+                    <div class="inline-flex items-center bg-teal-50 px-4 py-2 rounded-full">
+                        <span class="text-teal-700 font-medium text-sm">No Strings Attached</span>
+                    </div>
+                </div>
+                <h1 class="font-dm-serif text-5xl lg:text-6xl text-stone-900 leading-tight mb-6">
+                    Let's Talk
+                </h1>
+                <p class="text-xl text-stone-600 leading-relaxed">
+                    Contact me for information about rates and availability. I'd love to hear from you!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="pb-24">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div>
+                    <div class="bg-white rounded-3xl p-10 shadow-lg">
+                        <h2 class="font-dm-serif text-3xl text-stone-900 mb-8">Send a Message</h2>
+                        <form name="newcontact" method="POST" data-netlify="true" class="space-y-6">
+                            <input type="hidden" name="form-name" value="newcontact">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-stone-700 mb-2">Your Name *</label>
+                                    <input type="text" id="name" name="name" required
+                                        class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 transition outline-none">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-stone-700 mb-2">Your Email *</label>
+                                    <input type="email" id="email" name="email" required
+                                        class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 transition outline-none">
+                                </div>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="location" class="block text-sm font-medium text-stone-700 mb-2">Your Location</label>
+                                    <input type="text" id="location" name="location" placeholder="City, State"
+                                        class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 transition outline-none">
+                                </div>
+                                <div>
+                                    <label for="student-name" class="block text-sm font-medium text-stone-700 mb-2">Student's Name</label>
+                                    <input type="text" id="student-name" name="student-name"
+                                        class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 transition outline-none">
+                                </div>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="school" class="block text-sm font-medium text-stone-700 mb-2">School Name</label>
+                                    <input type="text" id="school" name="school"
+                                        class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 transition outline-none">
+                                </div>
+                                <div>
+                                    <label for="grade" class="block text-sm font-medium text-stone-700 mb-2">Grade Level</label>
+                                    <select id="grade" name="grade"
+                                        class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 transition outline-none bg-white">
+                                        <option value="">Select grade...</option>
+                                        <option value="6">6th Grade</option>
+                                        <option value="7">7th Grade</option>
+                                        <option value="8">8th Grade</option>
+                                        <option value="9">9th Grade (Freshman)</option>
+                                        <option value="10">10th Grade (Sophomore)</option>
+                                        <option value="11">11th Grade (Junior)</option>
+                                        <option value="12">12th Grade (Senior)</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-stone-700 mb-2">What subjects or tests are you interested in?</label>
+                                <input type="text" id="subject" name="subject" placeholder="e.g., ACT prep, Algebra 2, Chemistry..."
+                                    class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 transition outline-none">
+                            </div>
+                            <div>
+                                <label for="referral" class="block text-sm font-medium text-stone-700 mb-2">How did you hear about me?</label>
+                                <select id="referral" name="referral"
+                                    class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 transition outline-none bg-white">
+                                    <option value="">Select an option...</option>
+                                    <option value="referral">Friend/Family Referral</option>
+                                    <option value="school">School Recommendation</option>
+                                    <option value="google">Google Search</option>
+                                    <option value="social">Social Media</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-stone-700 mb-3">Preferred Contact Method</label>
+                                <div class="flex gap-6">
+                                    <label class="flex items-center gap-2 cursor-pointer">
+                                        <input type="radio" name="contact-preference" value="email" class="w-4 h-4 text-teal-600 focus:ring-teal-500">
+                                        <span class="text-stone-700">Email</span>
+                                    </label>
+                                    <label class="flex items-center gap-2 cursor-pointer">
+                                        <input type="radio" name="contact-preference" value="phone" class="w-4 h-4 text-teal-600 focus:ring-teal-500">
+                                        <span class="text-stone-700">Phone/Zoom</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-stone-700 mb-2">Additional Comments</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Tell me more about your goals and any questions you have..."
+                                    class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 transition outline-none resize-none"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-teal-600 text-white px-8 py-4 rounded-full hover:bg-teal-700 transition font-medium text-lg">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <a href="index.html" class="flex items-baseline mb-6">
+                        <span class="font-dm-serif text-3xl text-white">Drew Coleman</span>
+                        <div class="w-2 h-2 bg-teal-500 rounded-full ml-1 mb-1"></div>
+                    </a>
+                    <p class="text-stone-400 mb-6">
+                        Empowering students to achieve academic excellence through personalized tutoring and proven strategies.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="testprep.html" class="hover:text-teal-400 transition">Test Prep</a></li>
+                        <li><a href="academics.html" class="hover:text-teal-400 transition">Academic Support</a></li>
+                        <li><a href="aboutme.html" class="hover:text-teal-400 transition">About Me</a></li>
+                        <li><a href="contact.html" class="hover:text-teal-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4">Contact</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="mailto:drewcolemantutoring@gmail.com" class="hover:text-teal-400 transition break-all">
+                                drewcolemantutoring@gmail.com
+                            </a>
+                        </li>
+                        <li>(720) 314-8738</li>
+                        <li>New York | Denver | Online</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-stone-800 pt-8 text-center text-stone-500">
+                <p>&copy; 2026 Drew Coleman Tutoring. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

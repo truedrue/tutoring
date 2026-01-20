@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Support - Drew Coleman Tutoring</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <style>
+        .font-dm-sans { font-family: 'DM Sans', sans-serif; }
+        .font-dm-serif { font-family: 'DM Serif Display', serif; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        coral: {
+                            50: '#fff7f5',
+                            100: '#ffede8',
+                            200: '#ffd9cf',
+                            300: '#ffb8a6',
+                            400: '#ff8c70',
+                            500: '#f97150',
+                            600: '#e6533a',
+                            700: '#c23d28',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-dm-sans bg-stone-50">
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md fixed w-full top-0 z-50 border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-baseline">
+                        <span class="font-dm-serif text-3xl text-stone-900">Drew Coleman</span>
+                        <div class="w-2 h-2 bg-teal-500 rounded-full ml-1 mb-1"></div>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="academics.html" class="text-teal-600 font-medium transition">Academic Support</a>
+                    <a href="testprep.html" class="text-stone-700 hover:text-teal-600 font-medium transition">Test Prep</a>
+                    <a href="aboutme.html" class="text-stone-700 hover:text-teal-600 font-medium transition">About</a>
+                    <a href="contact.html" class="bg-stone-900 text-white px-7 py-3 rounded-full hover:bg-stone-800 transition font-medium">Let's Talk</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-stone-700" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-3 space-y-1">
+                <a href="academics.html" class="block px-3 py-2 text-teal-600 font-medium">Academic Support</a>
+                <a href="testprep.html" class="block px-3 py-2 text-stone-700">Test Prep</a>
+                <a href="aboutme.html" class="block px-3 py-2 text-stone-700">About</a>
+                <a href="contact.html" class="block px-3 py-2 bg-stone-900 text-white rounded">Let's Talk</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <div class="mb-6">
+                    <div class="inline-flex items-center bg-coral-50 px-4 py-2 rounded-full">
+                        <span class="text-coral-700 font-medium text-sm">Math, Science & Beyond</span>
+                    </div>
+                </div>
+                <h1 class="font-dm-serif text-5xl lg:text-6xl text-stone-900 leading-tight mb-6">
+                    Academic Support<br>
+                    <span class="relative inline-block">
+                        <span class="relative z-10">Tailored to You</span>
+                        <div class="absolute bottom-2 left-0 right-0 h-4 bg-coral-300/60 -rotate-1"></div>
+                    </span>
+                </h1>
+                <p class="text-xl text-stone-600 leading-relaxed">
+                    Primarily Math and Science, but honestly, I've done it all. It works well to switch between whatever subjects are causing your student stress that week.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Approach Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-dm-serif text-4xl text-stone-900 mb-6">Why I Connect With Students</h2>
+                    <p class="text-lg text-stone-600 leading-relaxed mb-6">
+                        I'm not a "natural" at math and science. What trips students up has tripped me up, too - and sometimes still does! This means I can present content in as many different ways as it takes for things to click.
+                    </p>
+                    <p class="text-lg text-stone-600 leading-relaxed">
+                        I'm warm and enthusiastic - a love of learning is often caught, not taught! I also love learning alongside my students, so I often end up diving into whatever they're studying.
+                    </p>
+                </div>
+                <div class="bg-gradient-to-br from-coral-100 to-coral-50 rounded-3xl p-10">
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-coral-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900 mb-1">I Understand the Struggle</h3>
+                                <p class="text-stone-600">What trips them up has tripped me up, too</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-coral-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900 mb-1">Personalized Methods</h3>
+                                <p class="text-stone-600">I can present content in as many ways as it takes for them to understand</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-coral-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900 mb-1">Warm & Enthusiastic</h3>
+                                <p class="text-stone-600">A love of learning is often caught, not taught!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What I Teach Section -->
+    <section class="py-20 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-dm-serif text-4xl text-stone-900 mb-4">What I Can Help With</h2>
+                <p class="text-xl text-stone-600">Comprehensive support across multiple subjects</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="bg-teal-100 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-dm-serif text-2xl text-stone-900 mb-3">Mathematics</h3>
+                    <p class="text-stone-600 mb-4">From algebra to calculus, I help students build strong foundations and work through whatever's giving them trouble.</p>
+                    <ul class="space-y-2 text-stone-600">
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 bg-teal-500 rounded-full"></div>
+                            <span>Algebra & Pre-Algebra</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 bg-teal-500 rounded-full"></div>
+                            <span>Geometry</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 bg-teal-500 rounded-full"></div>
+                            <span>Pre-Calculus & Calculus</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="bg-coral-100 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-coral-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-dm-serif text-2xl text-stone-900 mb-3">Science</h3>
+                    <p class="text-stone-600 mb-4">Making science click by finding explanations and approaches that work for each student.</p>
+                    <ul class="space-y-2 text-stone-600">
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 bg-coral-500 rounded-full"></div>
+                            <span>Biology</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 bg-coral-500 rounded-full"></div>
+                            <span>Chemistry</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 bg-coral-500 rounded-full"></div>
+                            <span>Physics & Earth Science</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="bg-purple-100 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-dm-serif text-2xl text-stone-900 mb-3">Study Skills</h3>
+                    <p class="text-stone-600 mb-4">The skills that help students stay on top of things across all their classes.</p>
+                    <ul class="space-y-2 text-stone-600">
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 bg-purple-500 rounded-full"></div>
+                            <span>Organization & Planning</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 bg-purple-500 rounded-full"></div>
+                            <span>Note-Taking Strategies</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 bg-purple-500 rounded-full"></div>
+                            <span>Time Management</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Parents Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-dm-serif text-4xl text-stone-900 mb-6">For Parents</h2>
+                    <p class="text-xl text-stone-600 leading-relaxed mb-8">
+                        I aim to build camaraderie with my students while maintaining a professional relationship. Here's what you can expect.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 bg-coral-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900 mb-1">Regular Updates</h3>
+                                <p class="text-stone-600">I keep parents informed about progress, challenges, and wins along the way.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 bg-coral-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900 mb-1">Professional Boundaries</h3>
+                                <p class="text-stone-600">Building real rapport with students while keeping things professional.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 bg-coral-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900 mb-1">Strong Organization</h3>
+                                <p class="text-stone-600">Structured sessions with clear goals and trackable progress.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-coral-50 to-coral-100/50 rounded-3xl p-10">
+                    <div class="text-center">
+                        <p class="text-5xl font-bold text-coral-600 mb-4">10+</p>
+                        <p class="text-stone-700 mb-8">Years helping families across multiple subjects and siblings</p>
+                        <a href="contact.html" class="inline-block bg-coral-500 text-white px-8 py-4 rounded-full hover:bg-coral-600 transition font-medium">
+                            Start the Conversation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-coral-500 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-coral-500 to-coral-600"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center text-white relative z-10">
+            <h2 class="font-dm-serif text-5xl mb-6">Questions?</h2>
+            <p class="text-2xl mb-10 text-coral-100">I'm happy to chat about how I can help your student</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-coral-600 px-10 py-4 rounded-full font-bold hover:bg-stone-50 transition">
+                    Schedule Free Consultation
+                </a>
+                <a href="testprep.html" class="border-2 border-white text-white px-10 py-4 rounded-full font-bold hover:bg-white/10 transition">
+                    Explore Test Prep
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <a href="index.html" class="flex items-baseline mb-6">
+                        <span class="font-dm-serif text-3xl text-white">Drew Coleman</span>
+                        <div class="w-2 h-2 bg-teal-500 rounded-full ml-1 mb-1"></div>
+                    </a>
+                    <p class="text-stone-400 mb-6">
+                        Empowering students to achieve academic excellence through personalized tutoring and proven strategies.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="testprep.html" class="hover:text-teal-400 transition">Test Prep</a></li>
+                        <li><a href="academics.html" class="hover:text-teal-400 transition">Academic Support</a></li>
+                        <li><a href="aboutme.html" class="hover:text-teal-400 transition">About Me</a></li>
+                        <li><a href="contact.html" class="hover:text-teal-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4">Contact</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="mailto:drewcolemantutoring@gmail.com" class="hover:text-teal-400 transition break-all">
+                                drewcolemantutoring@gmail.com
+                            </a>
+                        </li>
+                        <li>(720) 314-8738</li>
+                        <li>New York | Denver | Online</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-stone-800 pt-8 text-center text-stone-500">
+                <p>&copy; 2026 Drew Coleman Tutoring. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Drew Coleman Tutoring</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <style>
+        .font-dm-sans { font-family: 'DM Sans', sans-serif; }
+        .font-dm-serif { font-family: 'DM Serif Display', serif; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        coral: {
+                            50: '#fff7f5',
+                            100: '#ffede8',
+                            200: '#ffd9cf',
+                            300: '#ffb8a6',
+                            400: '#ff8c70',
+                            500: '#f97150',
+                            600: '#e6533a',
+                            700: '#c23d28',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-dm-sans bg-stone-50">
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md fixed w-full top-0 z-50 border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-baseline">
+                        <span class="font-dm-serif text-3xl text-stone-900">Drew Coleman</span>
+                        <div class="w-2 h-2 bg-teal-500 rounded-full ml-1 mb-1"></div>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="academics.html" class="text-stone-700 hover:text-teal-600 font-medium transition">Academic Support</a>
+                    <a href="testprep.html" class="text-stone-700 hover:text-teal-600 font-medium transition">Test Prep</a>
+                    <a href="aboutme.html" class="text-teal-600 font-medium transition">About</a>
+                    <a href="contact.html" class="bg-stone-900 text-white px-7 py-3 rounded-full hover:bg-stone-800 transition font-medium">Let's Talk</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-stone-700" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-3 space-y-1">
+                <a href="academics.html" class="block px-3 py-2 text-stone-700">Academic Support</a>
+                <a href="testprep.html" class="block px-3 py-2 text-stone-700">Test Prep</a>
+                <a href="aboutme.html" class="block px-3 py-2 text-teal-600 font-medium">About</a>
+                <a href="contact.html" class="block px-3 py-2 bg-stone-900 text-white rounded">Let's Talk</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="mb-6">
+                        <div class="inline-flex items-center bg-purple-50 px-4 py-2 rounded-full">
+                            <span class="text-purple-700 font-medium text-sm">New York | Denver | Online</span>
+                        </div>
+                    </div>
+                    <h1 class="font-dm-serif text-5xl lg:text-6xl text-stone-900 leading-tight mb-6">
+                        Hi, I'm Drew
+                    </h1>
+                    <p class="text-xl text-stone-600 leading-relaxed mb-8">
+                        I love sharing my passion for learning through tutoring and have been at it for over a decade. My goal isn't just to help students pass a test - it's to build genuine understanding and confidence that carries forward.
+                    </p>
+                </div>
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <div class="absolute -top-4 -left-4 w-full h-full bg-teal-200 rounded-3xl"></div>
+                        <img src="DrewDarwin.jpg" alt="Drew Coleman" class="relative rounded-3xl shadow-xl max-w-xs w-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Story Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="font-dm-serif text-4xl text-stone-900 mb-8">My Favorite Students</h2>
+                <p class="text-xl text-stone-600 leading-relaxed mb-8">
+                    My all-time favorite students are those who are stuck in a negative mindset:
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                    <div class="bg-stone-100 rounded-2xl px-6 py-4">
+                        <p class="text-stone-700 italic text-lg">"I'm no good at math."</p>
+                    </div>
+                    <div class="bg-stone-100 rounded-2xl px-6 py-4">
+                        <p class="text-stone-700 italic text-lg">"Chemistry is too hard for me."</p>
+                    </div>
+                </div>
+                <p class="text-xl text-stone-600 leading-relaxed">
+                    I can fully empathize with these students, as I avoided math and science for many years of my life. I can also share my insights and passion for those same topics now that they are <strong>among my favorite things!</strong>
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-teal-50 to-teal-100/50 rounded-3xl p-8 text-center">
+                    <div class="bg-teal-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-dm-serif text-xl text-stone-900 mb-3">Genuine Empathy</h3>
+                    <p class="text-stone-600">I understand the frustration of not "getting it" right away because I've been there myself.</p>
+                </div>
+                <div class="bg-gradient-to-br from-coral-50 to-coral-100/50 rounded-3xl p-8 text-center">
+                    <div class="bg-coral-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-coral-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-dm-serif text-xl text-stone-900 mb-3">Creative Explanations</h3>
+                    <p class="text-stone-600">I know multiple ways to explain concepts because I had to learn them from different angles.</p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100/50 rounded-3xl p-8 text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-dm-serif text-xl text-stone-900 mb-3">Warm & Enthusiastic</h3>
+                    <p class="text-stone-600">My friendly energy is contagious - I make learning feel natural and even enjoyable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Approach Section -->
+    <section class="py-20 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="bg-white rounded-3xl p-10 shadow-lg">
+                        <h3 class="font-dm-serif text-2xl text-stone-900 mb-6">What Sets Me Apart</h3>
+                        <div class="space-y-5">
+                            <div class="flex gap-3">
+                                <div class="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <h4 class="font-bold text-stone-900 mb-1">Methodical & Diligent</h4>
+                                    <p class="text-stone-600">I take a structured approach to learning while remaining flexible to each student's needs.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-3">
+                                <div class="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <h4 class="font-bold text-stone-900 mb-1">Excellent Communication</h4>
+                                    <p class="text-stone-600">Professional follow-up with parents and clear progress updates keep everyone informed.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-3">
+                                <div class="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <h4 class="font-bold text-stone-900 mb-1">Skills for Life</h4>
+                                    <p class="text-stone-600">I teach organization, study skills, and learning strategies that extend beyond any single subject.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-3">
+                                <div class="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
+                                <div>
+                                    <h4 class="font-bold text-stone-900 mb-1">Learning Differences Expert</h4>
+                                    <p class="text-stone-600">Over half of my test prep students have a diagnosis that allows for extended time. I've received trainings from multiple LD centers and am continually educating myself to best serve my students.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <h2 class="font-dm-serif text-4xl text-stone-900 mb-6">My Teaching Philosophy</h2>
+                    <p class="text-xl text-stone-600 leading-relaxed mb-6">
+                        Every student learns differently. Some need visual aids, others need hands-on practice, and some just need someone to patiently walk them through concepts step by step. I meet students where they are and adapt my methods to fit how they learn best.
+                    </p>
+                    <p class="text-lg text-stone-600 leading-relaxed">
+                        Whether we're working on test prep or everyday academics, I focus on teaching transferable skills: how to approach problems, manage time, stay organized, and believe in their own abilities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beyond Tutoring Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-dm-serif text-4xl text-stone-900 mb-6">Beyond Tutoring</h2>
+                    <p class="text-lg text-stone-600 leading-relaxed mb-8">
+                        Besides tutoring, I also:
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3">
+                            <div class="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <p class="text-stone-600">Have a degree in Geology & Secondary Science Education.</p>
+                        </li>
+                        <li class="flex gap-3">
+                            <div class="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <p class="text-stone-600">Worked as an editor for the Darwin Manuscripts Project at the American Museum of Natural History in New York City.</p>
+                        </li>
+                        <li class="flex gap-3">
+                            <div class="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <p class="text-stone-600">Am an educator at the Denver Museum of Nature and Science.</p>
+                        </li>
+                        <li class="flex gap-3">
+                            <div class="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <p class="text-stone-600">Volunteer with the University of Edinburgh, transcribing the scientific notebooks of Sir Charles Lyell.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-br from-purple-100 to-purple-50 rounded-3xl p-10 text-center">
+                    <p class="text-5xl font-bold text-purple-600 mb-4">10+</p>
+                    <p class="text-xl text-stone-700 mb-2">Years of Tutoring</p>
+                    <p class="text-stone-600">The families I work with often stay with me for years, through multiple subjects and siblings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-stone-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-dm-serif text-4xl mb-4">What Families Say</h2>
+                <p class="text-xl text-stone-400">Real feedback from students and parents</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-stone-800 rounded-3xl p-8">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-stone-300 mb-6">
+                        "Drew is as terrific as her reputation. Was very impressed with her on first meeting. Her professionalism and follow up is top notch. My daughter liked her very much!"
+                    </p>
+                    <p class="font-bold text-white">Parent of SAT Math 2 Student</p>
+                </div>
+                <div class="bg-stone-800 rounded-3xl p-8">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-stone-300 mb-6">
+                        "You guys have made such a good team. Drew, your methodical, diligent, caring, and teaching really made the difference. I'm so proud because she worked hard and earned her grades."
+                    </p>
+                    <p class="font-bold text-white">Parent of Student</p>
+                </div>
+                <div class="bg-stone-800 rounded-3xl p-8">
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-stone-300 mb-6">
+                        "Drew has been an amazing help. We are truly grateful for her tutoring skills and her wonderful friendly energy, which, thank goodness, is contagious."
+                    </p>
+                    <p class="font-bold text-white">Parent of Two ACT Students</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-dm-serif text-4xl text-stone-900 mb-4">What I Offer</h2>
+                <p class="text-xl text-stone-600">Comprehensive support for academic success</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <a href="testprep.html" class="bg-gradient-to-br from-teal-500 to-teal-600 text-white rounded-3xl p-10 hover:shadow-xl transition group">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="font-dm-serif text-3xl">Test Prep</h3>
+                        <svg class="w-8 h-8 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </div>
+                    <p class="text-teal-100 mb-6">ACT, SAT, ISEE, SSAT, and more. Comprehensive preparation with proven strategies that build confidence.</p>
+                    <ul class="space-y-2 text-teal-100">
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                            <span>Personalized study plans</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                            <span>Practice tests & analysis</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                            <span>Test-taking strategies</span>
+                        </li>
+                    </ul>
+                </a>
+                <a href="academics.html" class="bg-gradient-to-br from-coral-500 to-coral-600 text-white rounded-3xl p-10 hover:shadow-xl transition group">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="font-dm-serif text-3xl">Academic Support</h3>
+                        <svg class="w-8 h-8 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </div>
+                    <p class="text-coral-100 mb-6">Primarily math and science, but honestly, I've done it all. It works well to switch between whatever subjects are causing stress that week.</p>
+                    <ul class="space-y-2 text-coral-100">
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                            <span>Math & science tutoring</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                            <span>Organization & study skills</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                            <span>Homework & project help</span>
+                        </li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-purple-600 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-purple-600 to-purple-700"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center text-white relative z-10">
+            <h2 class="font-dm-serif text-5xl mb-6">Let's Work Together</h2>
+            <p class="text-2xl mb-10 text-purple-200">I'd love to hear more about the needs of your student!</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-purple-700 px-10 py-4 rounded-full font-bold hover:bg-stone-50 transition">
+                    Schedule Free Consultation
+                </a>
+                <a href="mailto:drewcolemantutoring@gmail.com" class="border-2 border-white text-white px-10 py-4 rounded-full font-bold hover:bg-white/10 transition">
+                    Email Me Directly
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <a href="index.html" class="flex items-baseline mb-6">
+                        <span class="font-dm-serif text-3xl text-white">Drew Coleman</span>
+                        <div class="w-2 h-2 bg-teal-500 rounded-full ml-1 mb-1"></div>
+                    </a>
+                    <p class="text-stone-400 mb-6">
+                        Empowering students to achieve academic excellence through personalized tutoring and proven strategies.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="testprep.html" class="hover:text-teal-400 transition">Test Prep</a></li>
+                        <li><a href="academics.html" class="hover:text-teal-400 transition">Academic Support</a></li>
+                        <li><a href="aboutme.html" class="hover:text-teal-400 transition">About Me</a></li>
+                        <li><a href="contact.html" class="hover:text-teal-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4">Contact</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="mailto:drewcolemantutoring@gmail.com" class="hover:text-teal-400 transition break-all">
+                                drewcolemantutoring@gmail.com
+                            </a>
+                        </li>
+                        <li>(720) 314-8738</li>
+                        <li>New York | Denver | Online</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-stone-800 pt-8 text-center text-stone-500">
+                <p>&copy; 2026 Drew Coleman Tutoring. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
